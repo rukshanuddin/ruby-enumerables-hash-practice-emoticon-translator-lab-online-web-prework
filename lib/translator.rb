@@ -4,7 +4,7 @@ require "yaml"# require modules here
 
 def load_library(path)
   library = YAML.load_file(path)
-  hash = {get_meaning: library, get_emoticon: library}
+  hash = {get_meaning: {}, get_emoticon: {}}
 end
 
 def get_japanese_emoticon
