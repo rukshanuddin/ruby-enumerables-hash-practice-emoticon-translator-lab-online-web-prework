@@ -23,7 +23,7 @@ end
 
 def get_english_meaning(path = './lib/emoticons.yml', smiley)
   library = load_library(path)
-  if library[:get_emoticon].include?(smiley)
+  if library[:get_meaning].include?(smiley)
     library[:get_meaning][smiley]
   else
     "Sorry, that emoticon was not found"
