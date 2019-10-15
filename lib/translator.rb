@@ -12,8 +12,12 @@ def load_library(path)
   hash
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(path = './lib/emoticons.yml', smiley)
+  library = load_library(path)
+  if library[:get_emoticon].include?(smiley)
+    library[:get_emoticon][smiley]
+  else
+    "Sorry that emoticon was not found"
 end
 
 def get_english_meaning
