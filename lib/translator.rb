@@ -17,7 +17,7 @@ def get_japanese_emoticon(path = './lib/emoticons.yml', smiley)
   if library[:get_emoticon].include?(smiley)
     library[:get_emoticon][smiley]
   else
-    "Sorry that emoticon was not found"
+    "Sorry, that emoticon was not found"
   end
 end
 
