@@ -1,8 +1,9 @@
-require 'yaml'# require modules here
+require "yaml"# require modules here
+
+library =YAML.load_file(emoticons.yml)
 
 def load_library
-  fn = File.dirname(File.expand_path(__FILE__)) + '/emoticons.yml'
-  cnf = YAML::load(File.open(fn))# code goes here
+  # code goes here
 end
 
 def get_japanese_emoticon
