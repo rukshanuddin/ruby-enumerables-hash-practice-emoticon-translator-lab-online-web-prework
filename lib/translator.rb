@@ -8,6 +8,7 @@ def load_library(path)
   library.each do |meaning, emoticon|
     hash[:get_meaning][1] = meaning
     hash[:get_emoticon[0]] = emoticon[1]
+  end
 end
 
 def get_japanese_emoticon
